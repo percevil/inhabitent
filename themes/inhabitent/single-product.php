@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all single product posts.
  *
  * @package RED_Starter_Theme
  */
@@ -12,6 +12,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div class="title-block"></div>
+
+
 		
 
 
@@ -19,6 +21,8 @@ get_header(); ?>
 			
 
 		<?php while ( have_posts() ) : the_post(); ?>
+
+		<h2>Price: $<?php the_field('price'); ?></h2>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
