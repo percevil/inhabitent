@@ -497,6 +497,16 @@ a {
   text-align: right;
   width: 50%; }
 
+.site-header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px dotted; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -676,12 +686,8 @@ object {
   display: flex; }
 
 .entry-header {
-  display: none;
   position: relative;
   left: 130px; }
-
-.wp-image-8 {
-  display: none; }
 
 .entry-content {
   color: white;
@@ -712,9 +718,7 @@ object {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: relative;
-  bottom: 2125px;
-  right: 120px; }
+  position: relative; }
 
 #archives-3 {
   position: relative;
@@ -725,8 +729,8 @@ object {
   background-color: #248a83;
   height: 80px;
   width: 480px;
-  position: relative;
-  top: 80px;
+  position: absolute;
+  top: 500px;
   left: 130px;
   z-index: 1; }
 
@@ -734,8 +738,8 @@ object {
   background-color: #248a83;
   height: 32px;
   width: 315px;
-  position: relative;
-  top: -199px;
+  position: absolute;
+  bottom: 199px;
   left: 455px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -751,5 +755,37 @@ object {
   position: relative;
   top: 400px; }
 
-body {
-  background-color: gray; }
+#comments {
+  position: absolute; }
+
+#site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.main-navigation a {
+  padding: 5px; }
+
+.wp-image-24 {
+  width: 100vw; }
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
+
+.attachment-large {
+  position: relative;
+  top: 10%; }
+
+p {
+  color: black; }

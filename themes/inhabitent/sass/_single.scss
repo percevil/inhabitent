@@ -4,14 +4,14 @@
 }
 
 .entry-header {
-  display: none;
+  //   display: none;
   position: relative;
   left: 130px;
 }
 
 .wp-image-8 {
   //big picture
-  display: none;
+  // display: none;
 }
 
 .entry-content {
@@ -21,7 +21,7 @@
   position: relative;
   bottom: 190px;
   left: 0px;
-  // z-index: 2;
+  z-index: 2;
 }
 
 .entry-title {
@@ -40,8 +40,9 @@
   display: flex;
   justify-content: flex-end;
   position: relative;
-  bottom: 2125px;
-  right: 120px;
+  // width: 100%;
+  // bottom: 2125px;
+  // right: 120px;
 }
 
 #archives-3 {
@@ -54,8 +55,8 @@
   background-color: #248a83;
   height: 80px;
   width: 480px;
-  position: relative;
-  top: 80px;
+  position: absolute;
+  top: 500px;
   left: 130px;
   z-index: 1;
 }
@@ -64,8 +65,8 @@
   background-color: #248a83;
   height: 32px;
   width: 315px;
-  position: relative;
-  top: -199px;
+  position: absolute;
+  bottom: 199px;
   left: 455px;
   display: flex;
   justify-content: center;
@@ -75,4 +76,9 @@
 .entry-meta {
   position: relative;
   top: 400px;
+}
+
+#comments {
+  position: absolute;
+
 }
