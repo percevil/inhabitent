@@ -2,14 +2,14 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    top: 0; /*uncomment to return to normal*/
     width: 100%;
     z-index: 99;
     background: rgba(white, 0.5);
-    border-bottom: 1px dotted;
+    border-bottom: 1px dashed #c8c8c8;
 }
 
-#masthead {
+.site-header {
     height: 50px;
 }
 

@@ -26,12 +26,14 @@
 
 #secondary {
   //Sidebar Widget area
+  
   display: flex;
   flex-direction: column;
-  // position: absolute;
-  // top: 125px;
-  // right: 120px;
+  position: absolute;
+  top: 125px;
+  right: 120px;
 }
+
 
 #archives-3 {
   position: relative;
@@ -44,7 +46,7 @@
   height: 80px;
   width: 480px;
   position: absolute;
-  top: 152px;
+  top: 150px;
   left: 48px;
   z-index: 1;
 }
