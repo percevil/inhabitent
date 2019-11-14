@@ -1,10 +1,37 @@
 .site-header {
     position: absolute;
-    top: 30px;
     left: 0;
     right: 0;
+    top: 0;
     width: 100%;
     z-index: 99;
     background: rgba(white, 0.5);
     border-bottom: 1px dotted;
+}
+
+#masthead {
+    height: 50px;
+}
+
+.site-header a {
+    display: flex;
+    color: #248A83;
+    position: relative;
+    bottom: 40px;
+    left: 300px;
+}
+
+.site-branding {
+    color: #248A83;
+    height: 50px;
+    width: 45px;
+
+}
+
+.fa.fa-search {
+    color: #248A83;
+    position: absolute;
+    top: 22px;
+    left: 740px;
+    z-index: 99;
 }

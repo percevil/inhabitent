@@ -23,7 +23,10 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding" >
-					<a href="inhabitent-log-tent.svg"></a>
+					<img src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg"/>
+					<a href="#" class="search-toggle" aria-hidden="true">
+					<i class="fa fa-search"></i>
+		</a>
 					
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>

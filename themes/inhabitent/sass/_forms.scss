@@ -57,6 +57,13 @@ input[type="search"] {
 }
 
 textarea {
+	position: absolute;
 	padding-left: 3px;
 	width: 100%;
+}
+
+#comment{
+	position: absolute;
+	top: 10px;
+
 }

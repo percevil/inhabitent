@@ -1,9 +1,18 @@
 #main {
     display: flex;
     flex-direction: column-reverse;
+
 }
 
-.attachment-large {
-    position: relative;
-    top: 10%;
+.entry-header {}
+
+.site-content {
+    display: flex;
+    margin: 3rem;
+}
+
+.p {
+    width: 440px;
+    display: flex;
+    flex-wrap: wrap;
 }
