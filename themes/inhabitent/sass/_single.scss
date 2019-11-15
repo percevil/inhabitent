@@ -65,11 +65,12 @@
   //Sidebar Widget area
   color: black;
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 125px;
-  right: 140px;
+  width: 300px;
+  position: relative;
+  top: 100px;
+  left: 650px;
   border-left: 1px dashed #c8c8c8;
+  flex-direction: column-reverse;
 }
 
 
