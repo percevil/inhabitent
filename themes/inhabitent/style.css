@@ -48,7 +48,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   left: 0;
   right: 0;
   top: 0;
-  /*uncomment to return to normal*/
   width: 100%;
   z-index: 99;
   background: rgba(255, 255, 255, 0.5);
@@ -63,7 +62,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   display: flex;
   color: #248A83;
   position: relative;
-  bottom: 40px;
+  top: 15px;
   left: 300px; }
 
 .site-branding {
@@ -450,13 +449,13 @@ input[type="search"] {
   padding: 3px; }
 
 textarea {
-  position: absolute;
-  padding-left: 3px;
-  width: 100%; }
-
-#comment {
-  position: absolute;
-  top: 10px; }
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -465,9 +464,9 @@ textarea {
 a {
   color: #248A83; }
   a:visited {
-    color: purple; }
+    color: white; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #fff9c0; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -545,7 +544,6 @@ a {
   left: 0;
   right: 0;
   top: 0;
-  /*uncomment to return to normal*/
   width: 100%;
   z-index: 99;
   background: rgba(255, 255, 255, 0.5);
@@ -560,7 +558,7 @@ a {
   display: flex;
   color: #248A83;
   position: relative;
-  bottom: 40px;
+  top: 15px;
   left: 300px; }
 
 .site-branding {
@@ -749,61 +747,45 @@ object {
   display: -ms-flexbox;
   display: flex; }
 
-.entry-content {
-  padding: 30px 0 0 0;
-  width: 640px;
-  font-size: 12px;
+.entry-meta {
+  color: white;
+  position: absolute;
+  bottom: 7px;
+  left: 290px;
+  height: 36px;
+  width: 350px;
+  background-color: #248A83;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.entry-header {
   position: relative;
-  bottom: 190px; }
+  margin-top: 5rem; }
+
+#page {
+  margin-left: 6rem; }
+
+.entry-content {
+  width: 640px;
+  font-size: 16px; }
+
+.comments-link a {
+  color: white;
+  text-decoration: none; }
 
 .entry-title {
   width: 400px;
   color: white;
   font-size: 26px;
-  position: relative;
-  bottom: 460px;
-  left: 15px;
   z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-#secondary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  top: 125px;
-  right: 120px; }
-
-#archives-3 {
-  position: relative;
-  top: 425px;
-  left: 215px; }
-
-.title-block {
-  background-color: #248a83;
-  height: 80px;
-  width: 480px;
-  position: absolute;
-  top: 150px;
-  left: 48px;
-  z-index: 1; }
-
-.author-block {
-  color: white;
-  background-color: #248a83;
-  height: 32px;
-  width: 315px;
-  position: absolute;
-  bottom: 212px;
-  left: 325px;
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -814,15 +796,42 @@ object {
       -ms-flex-align: center;
           align-items: center; }
 
-.author-block a {
-  color: white; }
+.title-block {
+  background-color: #248a83;
+  height: 80px;
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+  position: absolute;
+  top: 0;
+  z-index: 1; }
 
-.entry-meta {
+#secondary {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 125px;
+  right: 140px;
+  border-left: 1px dashed #c8c8c8; }
+
+#archives-3 {
   position: relative;
-  top: 400px; }
+  top: 425px;
+  left: 215px; }
 
-#comments {
-  position: absolute; }
+#tent-biz-hours-3 {
+  border-left: 1px dashed #c8c8c8; }
 
 #site-navigation {
   display: -webkit-box;
@@ -840,20 +849,9 @@ object {
 .wp-image-24 {
   width: 100vw; }
 
-#main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse; }
-
-.site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 3rem; }
+#text {
+  color: white;
+  text-decoration: none; }
 
 .p {
   width: 440px;

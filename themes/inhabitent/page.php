@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php get_template_part( 'template-parts/content', ); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
@@ -26,12 +26,12 @@ get_header(); ?>
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
    <?php /* Content from your array of post results goes here */ ?>
    <?php the_title(); 
-   the_content(); ?>
+    ?>
 
   
   
 
 <?php endforeach; wp_reset_postdata(); ?>
 
-<!-- <?php get_sidebar(); ?> -->
+
 <?php get_footer(); ?>

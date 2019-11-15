@@ -3,35 +3,73 @@
 
 }
 
-.entry-content {
-  // <p>
-  padding: 30px 0 0 0;
-  width: 640px;
-  font-size: 12px;
+.entry-meta {
+  color: white;
+  position: absolute;
+  bottom: 7px;
+  left: 290px;
+  height: 36px;
+  width: 350px;
+  background-color: #248A83;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.entry-header {
   position: relative;
-  bottom: 190px;
+  margin-top: 5rem;
+}
+
+#page {
+  margin-left: 6rem;
+
+}
+
+.entry-content {
+
+  width: 640px;
+  font-size: 16px;
+
+}
+
+.comments-link a {
+  color: white;
+  text-decoration: none;
 }
 
 .entry-title {
   width: 400px;
   color: white;
   font-size: 26px;
-  position: relative;
-  bottom: 460px;
-  left: 15px;
   z-index: 2;
+  text-decoration: none;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-block {
+  background-color: #248a83;
+  height: 80px;
+  width: 480px;
+  display: flex;
+  flex-direction: flex-start;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 #secondary {
   //Sidebar Widget area
-  
+  color: black;
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 125px;
-  right: 120px;
+  right: 140px;
+  border-left: 1px dashed #c8c8c8;
 }
 
 
@@ -41,38 +79,9 @@
   left: 215px;
 }
 
-.title-block {
-  background-color: #248a83;
-  height: 80px;
-  width: 480px;
-  position: absolute;
-  top: 150px;
-  left: 48px;
-  z-index: 1;
-}
 
-.author-block {
-  color: white;
-  background-color: #248a83;
-  height: 32px;
-  width: 315px;
-  position: absolute;
-  bottom: 212px;
-  left: 325px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.author-block a {
-  color: white;
-}
+#tent-biz-hours-3 {
+  border-left: 1px dashed #c8c8c8;
 
-.entry-meta {
-  position: relative;
-  top: 400px;
-}
-
-#comments {
-  position: absolute;
 }
