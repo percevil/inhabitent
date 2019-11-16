@@ -1,24 +1,22 @@
 .site-header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
+    height: 50px;
+    display: flex;
     z-index: 99;
     background: rgba(white, 0.5);
     border-bottom: 1px dashed #c8c8c8;
-}
 
-.site-header {
-    height: 50px;
+    &.sticky {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
 }
 
 .site-header a {
-    display: flex;
+    justify-content: flex-end;
     color: #248A83;
-    position: relative;
-    top: 15px; // Move this back after done.....
-    left: 300px;
+
 }
 
 .site-branding {
@@ -30,8 +28,5 @@
 
 .fa.fa-search {
     color: #248A83;
-    position: absolute;
-    top: 22px;
-    left: 740px;
-    z-index: 99;
+
 }

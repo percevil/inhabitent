@@ -1,3 +1,28 @@
+.title-block {
+    position: absolute;
+    bottom: 378px;
+}
+
+.entry-meta {
+    position: absolute;
+    bottom: -183px;
+    right: 416px;
+}
+
+.site-content {
+    display: flex;
+    margin-top: 40px;
+}
+
+.content-area {
+    flex: 2;
+    margin-left: 6rem;
+}
+
+.widget-area {
+    flex: 1;
+}
+
 #text {
     color: white;
     text-decoration: none;

@@ -1,13 +1,9 @@
-#site-navigation {
-  display: flex;
-
-}
 
 .entry-meta {
   color: white;
-  position: absolute;
-  bottom: 7px;
-  left: 290px;
+  // position: absolute;
+  // bottom: 7px;
+  // left: 290px;
   height: 36px;
   width: 350px;
   background-color: #248A83;
@@ -17,22 +13,12 @@
 
 }
 
-.entry-header {
-  position: relative;
-  margin-top: 5rem;
-}
 
-#page {
-  margin-left: 6rem;
 
-}
+// #page {
+//   margin-left: 6rem;
 
-.entry-content {
-
-  width: 640px;
-  font-size: 16px;
-
-}
+// }
 
 .comments-link a {
   color: white;
@@ -40,6 +26,7 @@
 }
 
 .entry-title {
+  height: 80px;
   width: 400px;
   color: white;
   font-size: 26px;
@@ -52,32 +39,18 @@
 
 .title-block {
   background-color: #248a83;
-  height: 80px;
   width: 480px;
   display: flex;
   flex-direction: flex-start;
-  position: absolute;
-  top: 0;
+  // position: absolute;
+  // top: 0;
   z-index: 1;
 }
 
 #secondary {
-  //Sidebar Widget area
-  color: black;
-  display: flex;
-  width: 300px;
-  position: relative;
-  top: 100px;
-  left: 650px;
+  
   border-left: 1px dashed #c8c8c8;
   flex-direction: column-reverse;
-}
-
-
-#archives-3 {
-  position: relative;
-  top: 425px;
-  left: 215px;
 }
 
 

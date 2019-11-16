@@ -44,26 +44,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 .site-header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  background: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px dashed #c8c8c8; }
-
-.site-header {
-  height: 50px; }
-
-.site-header a {
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #248A83;
-  position: relative;
-  top: 15px;
-  left: 300px; }
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px dashed #c8c8c8; }
+  .site-header.sticky {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; }
+
+.site-header a {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #248A83; }
 
 .site-branding {
   color: #248A83;
@@ -71,11 +69,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 45px; }
 
 .fa.fa-search {
-  color: #248A83;
-  position: absolute;
-  top: 22px;
-  left: 740px;
-  z-index: 99; }
+  color: #248A83; }
 
 body {
   background-image: uri("./dark-wood.png"); }
@@ -540,26 +534,24 @@ a {
   width: 50%; }
 
 .site-header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  background: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px dashed #c8c8c8; }
-
-.site-header {
-  height: 50px; }
-
-.site-header a {
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #248A83;
-  position: relative;
-  top: 15px;
-  left: 300px; }
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px dashed #c8c8c8; }
+  .site-header.sticky {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; }
+
+.site-header a {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #248A83; }
 
 .site-branding {
   color: #248A83;
@@ -567,11 +559,7 @@ a {
   width: 45px; }
 
 .fa.fa-search {
-  color: #248A83;
-  position: absolute;
-  top: 22px;
-  left: 740px;
-  z-index: 99; }
+  color: #248A83; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -742,16 +730,8 @@ object {
 .gallery-caption {
   display: block; }
 
-#site-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .entry-meta {
   color: white;
-  position: absolute;
-  bottom: 7px;
-  left: 290px;
   height: 36px;
   width: 350px;
   background-color: #248A83;
@@ -765,22 +745,12 @@ object {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.entry-header {
-  position: relative;
-  margin-top: 5rem; }
-
-#page {
-  margin-left: 6rem; }
-
-.entry-content {
-  width: 640px;
-  font-size: 16px; }
-
 .comments-link a {
   color: white;
   text-decoration: none; }
 
 .entry-title {
+  height: 80px;
   width: 400px;
   color: white;
   font-size: 26px;
@@ -798,7 +768,6 @@ object {
 
 .title-block {
   background-color: #248a83;
-  height: 80px;
   width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -807,48 +776,49 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: flex-start;
           flex-direction: flex-start;
-  position: absolute;
-  top: 0;
   z-index: 1; }
 
 #secondary {
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 300px;
-  position: relative;
-  top: 100px;
-  left: 650px;
   border-left: 1px dashed #c8c8c8;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse; }
 
-#archives-3 {
-  position: relative;
-  top: 425px;
-  left: 215px; }
-
 #tent-biz-hours-3 {
   border-left: 1px dashed #c8c8c8; }
-
-#site-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
 
 .main-navigation a {
   padding: 5px; }
 
 .wp-image-24 {
   width: 100vw; }
+
+.title-block {
+  position: absolute;
+  bottom: 378px; }
+
+.entry-meta {
+  position: absolute;
+  bottom: -183px;
+  right: 416px; }
+
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px; }
+
+.content-area {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-left: 6rem; }
+
+.widget-area {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
 #text {
   color: white;
