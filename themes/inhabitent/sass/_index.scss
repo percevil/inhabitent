@@ -1,22 +1,42 @@
 .title-block {
-    position: absolute;
-    bottom: 378px;
+    position: relative;
+    bottom: 425px;
 }
 
 .entry-meta {
-    position: absolute;
-    bottom: -183px;
-    right: 416px;
+    // author block whole
+    position: relative;
+    bottom: 166px;
+    left: 290px;
 }
 
 .site-content {
     display: flex;
     margin-top: 40px;
+
 }
 
 .content-area {
     flex: 2;
     margin-left: 6rem;
+}
+
+.entry-title {
+    //title block insides
+    height: 80px;
+    width: 400px;
+    color: white;
+    font-size: 26px;
+    // z-index: 2;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.entry-title a {
+    align-items: center;
 }
 
 .widget-area {

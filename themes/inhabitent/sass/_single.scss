@@ -1,9 +1,5 @@
-
 .entry-meta {
   color: white;
-  // position: absolute;
-  // bottom: 7px;
-  // left: 290px;
   height: 36px;
   width: 350px;
   background-color: #248A83;
@@ -13,42 +9,24 @@
 
 }
 
-
-
-// #page {
-//   margin-left: 6rem;
-
-// }
-
 .comments-link a {
   color: white;
   text-decoration: none;
 }
 
-.entry-title {
-  height: 80px;
-  width: 400px;
-  color: white;
-  font-size: 26px;
-  z-index: 2;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .title-block {
   background-color: #248a83;
   width: 480px;
   display: flex;
-  flex-direction: flex-start;
+  // flex-direction: flex-start;
   // position: absolute;
   // top: 0;
-  z-index: 1;
+  // z-index: 1;
 }
 
 #secondary {
-  
+
   border-left: 1px dashed #c8c8c8;
   flex-direction: column-reverse;
 }
