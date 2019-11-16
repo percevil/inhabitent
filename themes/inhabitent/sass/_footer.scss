@@ -4,33 +4,62 @@
 }
 
 .info-block {
-    // position: relative;
-    // left: 200px;
     display: flex;
     flex-direction: row;
-
-}
-
-.footer-block {
-    display: flex;
-    flex-wrap: nowrap;
 }
 
 .contact {
-    color: #d99054;
+    position: relative;
+    bottom: 340px;
+    left: 100px;
+}
 
+.contact h3 {
+    color: #d99054;
+}
+
+.contact i {
+    color: white;
+}
+
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact p {
+    color: white;
 }
 
 .bus-hours {
-    color: #d99054;
-
+    position: relative;
+    bottom: 525px;
+    left: 300px;
+    margin-left: 100px;
 }
 
-.tent-logo {
-    height: 50px;
-    width: 280px;
+
+
+.bus-hours h3 {
+    color: #d99054;
+}
+
+
+.bus-hours p {
+    color: white;
 }
 
 .tree {
-    background-color: gray;
+    height: 50px;
+    width: 280px;
+    position: relative;
+    bottom: 708px;
+    left: 800px;
+}
+
+.copyright {
+    color: white;
+    position: relative;
+    bottom: 527px;
+    left: 522px;
 }

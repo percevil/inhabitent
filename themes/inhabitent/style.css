@@ -84,25 +84,47 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       -ms-flex-direction: row;
           flex-direction: row; }
 
-.footer-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
-
 .contact {
+  position: relative;
+  bottom: 340px;
+  left: 100px; }
+
+.contact h3 {
   color: #d99054; }
+
+.contact i {
+  color: white; }
+
+.contact a {
+  text-decoration: none; }
+
+.contact p {
+  color: white; }
 
 .bus-hours {
+  position: relative;
+  bottom: 525px;
+  left: 300px;
+  margin-left: 100px; }
+
+.bus-hours h3 {
   color: #d99054; }
 
-.tent-logo {
-  height: 50px;
-  width: 280px; }
+.bus-hours p {
+  color: white; }
 
 .tree {
-  background-color: gray; }
+  height: 50px;
+  width: 280px;
+  position: relative;
+  bottom: 708px;
+  left: 800px; }
+
+.copyright {
+  color: white;
+  position: relative;
+  bottom: 527px;
+  left: 522px; }
 
 html {
   font-family: sans-serif;
