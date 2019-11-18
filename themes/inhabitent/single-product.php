@@ -13,13 +13,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		
 
-
-		
-
-
-
-			
-
 		<?php while ( have_posts() ) : the_post(); ?>
 
 		<h2>Price: $<?php the_field('price'); ?></h2>
@@ -40,5 +33,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

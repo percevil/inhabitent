@@ -56,6 +56,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     left: 0;
     right: 0;
     top: 0; }
+  .site-header #site-navigation {
+    position: relative;
+    left: 750px;
+    right: 0;
+    top: 0; }
 
 .site-header a {
   -webkit-box-pack: end;
@@ -71,8 +76,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .fa.fa-search {
   color: #248A83; }
 
+footer {
+  height: 300px; }
+
 .wood-bkgd {
-  height: 360px;
+  height: 300px;
   width: 100%; }
 
 .info-block {
@@ -86,7 +94,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .contact {
   position: relative;
-  bottom: 340px;
+  bottom: 282px;
   left: 100px; }
 
 .contact h3 {
@@ -103,7 +111,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .bus-hours {
   position: relative;
-  bottom: 525px;
+  bottom: 466px;
   left: 300px;
   margin-left: 100px; }
 
@@ -117,7 +125,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 50px;
   width: 280px;
   position: relative;
-  bottom: 708px;
+  bottom: 650px;
   left: 800px; }
 
 .copyright {
@@ -598,6 +606,11 @@ a {
     left: 0;
     right: 0;
     top: 0; }
+  .site-header #site-navigation {
+    position: relative;
+    left: 750px;
+    right: 0;
+    top: 0; }
 
 .site-header a {
   -webkit-box-pack: end;
@@ -782,6 +795,10 @@ object {
 .gallery-caption {
   display: block; }
 
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/* Front page */
 .entry-meta {
   color: white;
   height: 36px;
@@ -818,11 +835,83 @@ object {
 #tent-biz-hours-3 {
   border-left: 1px dashed #c8c8c8; }
 
-.main-navigation a {
-  padding: 5px; }
+.bkgd-image {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .bkgd-image .round-tent-logo {
+    height: 280px;
+    width: 280px;
+    position: absolute;
+    top: 250px;
+    right: 500px; }
 
-.wp-image-24 {
-  width: 100vw; }
+.shop-stuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+
+.product-block {
+  height: 275px;
+  width: 260px;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .product-block .i-image {
+    height: 70px;
+    width: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.blurb {
+  height: 85px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.do-stuff {
+  height: 40px;
+  width: 120px;
+  background-color: #248A83;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .title-block {
   position: relative;
@@ -882,3 +971,10 @@ object {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+
+.grid-container {
+  max-width: 250px;
+  background-color: brown;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; }

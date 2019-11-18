@@ -10,7 +10,7 @@
 			</div><!-- #content -->
 
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer  >
 
 			<img class="wood-bkgd" src="<?php echo get_stylesheet_directory_uri();?>/images/dark-wood.png"/>
 
@@ -42,17 +42,17 @@
 					</div>
 			
 
-				<div>
+				
 					<img class="tree" src="https://tent.academy.red/wp-content/themes/inhabitent/images/inhabitent-logo-text.svg" alt="Inhabitent logo">
 					<!-- <a href=""><img class="tent-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/ihabitent-logo-text-dark.svg"/></a>  -->
 			
-				</div>
-					<div class="site-info">
+			
+					<!-- <div class="site-info">
 					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
 					</div><!-- .site-info -->
-					<div class="copyright">Copyright © 2019 Inhabitent</div>
+					<div class="copyright">Copyright © 2019 Inhabitent</div> -->
 						
-	</footer><!-- #colophon -->			
+	</footer>			
 		
 		
 		<?php wp_footer(); ?>
