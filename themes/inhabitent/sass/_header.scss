@@ -1,41 +1,37 @@
 .site-header {
-    height: 50px;
-    display: flex;
-    z-index: 99;
-    background: rgba(white, 0.5);
-    border-bottom: 1px dashed #c8c8c8;
+  height: 50px;
+  display: flex;
+  z-index: 99;
+  background: rgba(white, 0.5);
+  border-bottom: 1px solid #e1e1e1;
 
-    &.sticky {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-    }
+  &.sticky {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 
-    #site-navigation {
-        // link placement
-        position: relative;
-        left: 750px;
-        right: 0;
-        top: 0;
-
-    }
+  #site-navigation {
+    // link placement
+    position: relative;
+    left: 750px;
+    right: 0;
+    top: 0;
+  }
 }
 
 .site-header a {
-    justify-content: flex-end;
-    color: #248A83;
-
+  justify-content: flex-end;
+  color: #248a83;
 }
 
 .site-branding {
-    color: #248A83;
-    height: 50px;
-    width: 45px;
-
+  color: #248a83;
+  height: 50px;
+  width: 45px;
 }
 
 .fa.fa-search {
-    color: #248A83;
-
+  color: #248a83;
 }

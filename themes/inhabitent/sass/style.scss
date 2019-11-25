@@ -47,26 +47,27 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 // Imported but not included in the stylesheet.
 
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 // CSS included in style.css.
-@import "header";
-@import "footer";
-@import "normalize";
-@import "fonts";
-@import "typography";
-@import "elements";
-@import "forms";
-@import "navigation";
-@import "header";
-@import "modules";
-@import "widgets";
-@import "content";
-@import "media";
-@import "page-templates";
-@import "single";
-@import "page";
-@import "index";
-@import "archive-product";
-@import "single-product";
+@import 'header';
+@import 'footer';
+@import 'normalize';
+@import 'fonts';
+@import 'typography';
+@import 'elements';
+@import 'forms';
+@import 'navigation';
+@import 'header';
+@import 'modules';
+@import 'widgets';
+@import 'content';
+@import 'media';
+@import 'page-templates';
+@import 'single';
+@import 'page';
+@import 'index';
+@import 'archive-product';
+@import 'single-product';
+@import 'page-home';

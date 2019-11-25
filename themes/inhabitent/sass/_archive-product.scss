@@ -1,7 +1,11 @@
 .grid-container {
-    max-width: 250px;
-    background-color: brown;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+  max-width: 250px;
+  background-color: brown;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.content-area {
+  width: 200px;
+  display: flex;
 }

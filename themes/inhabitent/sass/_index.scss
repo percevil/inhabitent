@@ -1,55 +1,15 @@
-.title-block {
-    position: relative;
-    bottom: 425px;
-}
 
-.entry-meta {
-    // author block whole
-    position: relative;
-    bottom: 166px;
-    left: 290px;
-}
-
-.site-content {
-    display: flex;
-    margin-top: 40px;
-
-}
-
-.content-area {
-    flex: 2;
-    margin-left: 6rem;
-}
-
-.entry-title {
-    //title block insides
-    height: 80px;
-    width: 400px;
-    color: white;
-    font-size: 26px;
-    // z-index: 2;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.entry-title a {
-    align-items: center;
-}
+// .content-area {
+//   max-width: 1120px;
+//   margin: auto 0;
+// }
 
 .widget-area {
-    flex: 1;
+  padding-left: 20px;
+  border-left: 1px solid #e1e1e1;
 }
 
-#text {
-    color: white;
-    text-decoration: none;
-}
-
-.p {
-    width: 440px;
-    display: flex;
-    flex-wrap: wrap;
+.entry-header {
+  display: flex;
+  flex-direction: column;
 }
