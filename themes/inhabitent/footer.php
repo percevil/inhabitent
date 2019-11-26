@@ -7,13 +7,13 @@
 
 ?>
 
-			</div><!-- #content -->
 
 
 	<footer  >
 
 			<img class="wood-bkgd" src="<?php echo get_stylesheet_directory_uri();?>/images/dark-wood.png"/>
 
+				<div class="info-container">
 				
 					<div class="contact">
 						<h3>CONTACT INFO</h3>
@@ -27,9 +27,7 @@
 						<i class="fab fa-twitter-square"></i>
 						<i class="fab fa-google-plus-square"></i>
 						</p>
-					
-						
-						
+	
 					</div>
 			
 
@@ -41,16 +39,14 @@
 						<p>Sunday: Closed</p>
 					</div>
 			
-
-				
 					<img class="tree" src="https://tent.academy.red/wp-content/themes/inhabitent/images/inhabitent-logo-text.svg" alt="Inhabitent logo">
 					<!-- <a href=""><img class="tent-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/ihabitent-logo-text-dark.svg"/></a>  -->
 			
-			
-					<!-- <div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-					</div><!-- .site-info -->
-					<div class="copyright">Copyright © 2019 Inhabitent</div> -->
+
+					<div class="copyright">Copyright © 2019 Inhabitent
+					</div>
+
+			</div>
 						
 	</footer>			
 		

@@ -1,11 +1,9 @@
 .grid-container {
-  max-width: 250px;
-  background-color: brown;
+  //max-width: 250px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .content-area {
-  width: 200px;
   display: flex;
 }
