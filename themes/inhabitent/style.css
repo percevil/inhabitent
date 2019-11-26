@@ -840,6 +840,19 @@ object {
   position: absolute;
   top: 0px; }
 
+.content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .content-area main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 70%;
+            flex: 1 0 70%; }
+  .content-area .widget-area {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%; }
+
 .entry-meta {
   color: white;
   height: 36px;
@@ -867,6 +880,9 @@ object {
 
 .entry-header {
   position: relative; }
+
+.site-main {
+  margin-top: 30px; }
 
 .widget-area {
   padding-left: 20px;
@@ -902,12 +918,40 @@ object {
           justify-content: space-between;
   border: 1px solid #808080;
   padding: 1rem .75rem;
+  color: black;
   font-size: 12px; }
 
 .content-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.taxonomy-description p {
+  display: none; }
+
+.page-title {
+  display: none; }
+
+.shop-stuff h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.desw-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-decoration: none; }
 
 .site-content {
   display: -webkit-box;
@@ -920,10 +964,6 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -931,8 +971,7 @@ object {
       -ms-flex: 2;
           flex: 2;
   padding-left: 60px;
-  padding-right: 60px;
-  margin-top: 30px; }
+  padding-right: 60px; }
 
 .widget-area {
   -webkit-box-flex: 1;

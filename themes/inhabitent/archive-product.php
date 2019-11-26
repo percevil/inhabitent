@@ -10,7 +10,18 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-
+        
+        <div class="shop-stuff">
+            <h1>SHOP STUFF</h1>
+        </div>
+        <div class="desw-links">
+            <ul class="links">
+                <li>DO</li>
+                <li>EAT</li>
+                <li>SLEEP</li>
+                <li>WEAR</li>
+            </ul>
+        </div>
 
         <?php if ( have_posts() ) : ?>
 

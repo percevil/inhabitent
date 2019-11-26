@@ -6,6 +6,15 @@
   position: absolute;
   top: 0px;
 }
+.content-area{
+  display: flex;
+  main{
+    flex:1 0 70%;
+  }
+  .widget-area{
+    flex:1 0 30%
+  }
+}
 .entry-meta {
   color: white;
   height: 36px;
@@ -30,4 +39,7 @@
 
 .entry-header {
   position: relative;
+}
+.site-main{
+  margin-top: 30px;
 }
