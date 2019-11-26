@@ -853,14 +853,18 @@ object {
         -ms-flex: 1 0 30%;
             flex: 1 0 30%; }
 
+.entry-content {
+  padding-right: 80px; }
+
 .entry-meta {
   color: white;
   height: 36px;
-  width: 327px;
+  width: 400px;
   background-color: #248a83;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 16px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -869,7 +873,7 @@ object {
           justify-content: center;
   position: absolute;
   bottom: 0;
-  right: 13px; }
+  right: 82px; }
 
 .comments-link a {
   color: white;

@@ -99,11 +99,9 @@ class Tent_Biz_Hours extends WP_Widget {
 		// Manipulate the widget's values based on their input fields
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
 		$monday_friday = empty( $instance['monday_friday'] ) ? '' : $instance['monday_friday'];
-		$saturday = empty( $instance['saturday '] ) ? '' :$instance['saturday '] ;
+		$saturday = empty( $instance['saturday'] ) ? '' :$instance['saturdayß'] ;
 
-		$sunday = empty( $instance['sunday '] ) ? '' :$instance['sunday '] ;
-		
-		
+		$sunday = empty( $instance['sunday'] ) ? '' :$instance['sunday'] ;
 		
 		// TODO: other fields go here...
 
