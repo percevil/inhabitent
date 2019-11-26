@@ -24,6 +24,6 @@
 	</header><!-- .entry-header -->
 	
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
