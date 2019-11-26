@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <div class="bkgd-image-container">
-    <div>
+    <div class="home-image">
         <img src="wp-content/themes/inhabitent/images/home-hero.jpg" alt="home-image">
     </div>
 
@@ -17,10 +17,8 @@ get_header(); ?>
         <img class="logo" src="wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg"
             alt="Inhabitent full logo">
     </div>
+</div>
 
-</div>
-</div>
-</div>
 <div class="shop-stuff">
     <h2>SHOP STUFF</h2>
 </div>
@@ -142,5 +140,5 @@ get_header(); ?>
 
 
 
-    <?php get_sidebar(); ?>
-    <?php get_footer(); ?>
+   
+<?php get_footer(); ?>

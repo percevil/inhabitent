@@ -57,7 +57,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     top: 0; }
 
 #site-navigation {
-  width: 1120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,61 +83,78 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .fa.fa-search {
   color: #248a83; }
 
-.wood-bkgd {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.footer {
+  background-image: url("../../images/dark-wood.png");
   height: 300px;
-  width: 100%; }
+  width: 100vw; }
 
-#info-block {
+.info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-#footer-block {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse; }
+.footer-block {
+  font-size: 13px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
-.contact {
-  background-color: black;
-  width: 250px; }
+#contact {
+  font-size: 13px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 30px;
+  padding-left: 125px; }
 
-.contact h3 {
-  color: #d99054;
-  background-color: black; }
+#contact h3 {
+  color: #d99054; }
 
-.contact i {
+#contact i {
   color: white; }
 
-.contact a {
+#contact a {
   text-decoration: none; }
 
-.contact p {
-  color: white;
-  background-color: black; }
+#contact p {
+  color: white; }
 
-.bus-hours h3 {
+#bus-hours {
+  font-size: 13px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 30px; }
+
+#bus-hours h3 {
   color: #d99054;
-  background-color: black;
   width: 250px; }
 
-.bus-hours p {
+#bus-hours p {
   color: white;
-  background-color: black;
   width: 250px; }
 
-.tree {
-  height: 50px;
-  width: 280px;
-  background-color: black; }
+#tree {
+  height: 45px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin: 52px 0; }
 
 .copyright {
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
-  background-color: black;
-  width: 250px; }
+  margin-top: 76px; }
 
 html {
   font-family: sans-serif;
@@ -613,7 +629,6 @@ a {
     top: 0; }
 
 #site-navigation {
-  width: 1120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

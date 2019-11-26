@@ -1,72 +1,79 @@
 
-
-.wood-bkgd {
-   display: flex;
-    height: 300px; 
-    width: 100%;
- 
+.footer{
+    background-image: url("../../images/dark-wood.png");
+    height: 300px;
+    width: 100vw;    
 }
-
-#info-block{
+.info-container{
     display: flex;
+    
 
 }
-#footer-block{
-    flex-direction: column-reverse;
-  
+
+.footer-block{
+    font-size: 13px; 
+    flex-direction: row;  
+    flex: 1;
+}
+
+#contact{
+    font-size: 13px;
+    flex: 1; 
+    margin:30px ;
+    padding-left: 125px;
+   
+}
+
+#contact h3 {
+    color: #d99054;
+   
+}
+
+#contact i {
+    color: white;
+}
+
+
+#contact a {
+    text-decoration: none;
+}
+
+#contact p {
+    color: white;
     
 }
 
 
-.contact{
-    background-color: black;
-    width: 250px;
+#bus-hours{
+    font-size: 13px; 
+    flex: 1;
+    padding-top: 30px;  
 }
-
-.contact h3 {
+#bus-hours h3 {
     color: #d99054;
-    background-color: black;
-}
-
-.contact i {
-    color: white;
-}
-
-
-.contact a {
-    text-decoration: none;
-}
-
-.contact p {
-    color: white;
-    background-color: black;
-}
-
-
-
-.bus-hours h3 {
-    color: #d99054;
-    background-color: black;
+   
     width: 250px;
 }
 
 
-.bus-hours p {
+
+
+#bus-hours p {
     color: white;
-    background-color: black;
     width: 250px;
 }
 
-.tree {
-    height: 50px;
-    width: 280px;
-    background-color: black;
+#tree {
+    height: 45px;
+    flex: 2;
+    margin: 52px 0;
 
 }
 
 .copyright {
-    color: white;
-    background-color: black;
-    width: 250px;
-    
+    font-size: 13px; 
+    display: flex;
+    justify-content: center;
+    color: white;   
+    margin-top: 76px; 
 }
