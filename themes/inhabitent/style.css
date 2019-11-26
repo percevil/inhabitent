@@ -48,7 +48,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 99;
   background: rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid #e1e1e1; }
   .site-header.sticky {
@@ -56,49 +55,60 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     left: 0;
     right: 0;
     top: 0; }
-  .site-header #site-navigation {
-    position: relative;
-    left: 750px;
-    right: 0;
-    top: 0; }
+
+#site-navigation {
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 600px; }
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .site-header a {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  margin-right: 16px;
   color: #248a83; }
 
-.site-branding {
+.tent-logo {
   color: #248a83;
   height: 50px;
-  width: 45px; }
+  width: 45px;
+  margin-left: 140px; }
 
 .fa.fa-search {
   color: #248a83; }
 
-footer {
-  height: 300px; }
-
 .wood-bkgd {
-  height: 300px;
-  width: 100%; }
-
-.info-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  height: 300px;
+  width: 100%; }
+
+#info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#footer-block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
 
 .contact {
-  position: relative;
-  bottom: 282px;
-  left: 100px; }
+  background-color: black;
+  width: 250px; }
 
 .contact h3 {
-  color: #d99054; }
+  color: #d99054;
+  background-color: black; }
 
 .contact i {
   color: white; }
@@ -107,32 +117,28 @@ footer {
   text-decoration: none; }
 
 .contact p {
-  color: white; }
-
-.bus-hours {
-  position: relative;
-  bottom: 466px;
-  left: 300px;
-  margin-left: 100px; }
+  color: white;
+  background-color: black; }
 
 .bus-hours h3 {
-  color: #d99054; }
+  color: #d99054;
+  background-color: black;
+  width: 250px; }
 
 .bus-hours p {
-  color: white; }
+  color: white;
+  background-color: black;
+  width: 250px; }
 
 .tree {
   height: 50px;
   width: 280px;
-  position: relative;
-  bottom: 650px;
-  left: 800px; }
+  background-color: black; }
 
 .copyright {
   color: white;
-  position: relative;
-  bottom: 527px;
-  left: 522px; }
+  background-color: black;
+  width: 250px; }
 
 html {
   font-family: sans-serif;
@@ -598,7 +604,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 99;
   background: rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid #e1e1e1; }
   .site-header.sticky {
@@ -606,22 +611,31 @@ a {
     left: 0;
     right: 0;
     top: 0; }
-  .site-header #site-navigation {
-    position: relative;
-    left: 750px;
-    right: 0;
-    top: 0; }
+
+#site-navigation {
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 600px; }
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .site-header a {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  margin-right: 16px;
   color: #248a83; }
 
-.site-branding {
+.tent-logo {
   color: #248a83;
   height: 50px;
-  width: 45px; }
+  width: 45px;
+  margin-left: 140px; }
 
 .fa.fa-search {
   color: #248a83; }
@@ -855,7 +869,25 @@ object {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr; }
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px; }
+
+.grid-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 70%; }
+
+.grid-container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #808080;
+  padding: 1rem .75rem;
+  font-size: 12px; }
 
 .content-area {
   display: -webkit-box;

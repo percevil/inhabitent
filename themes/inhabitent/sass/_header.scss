@@ -1,7 +1,7 @@
 .site-header {
   height: 50px;
   display: flex;
-  z-index: 99;
+  // z-index: 99;
   background: rgba(white, 0.5);
   border-bottom: 1px solid #e1e1e1;
 
@@ -11,25 +11,29 @@
     right: 0;
     top: 0;
   }
+}
+#site-navigation{
+  width: 1120px;
+  display: flex;
+  align-items: center;
+  margin-left: 600px;
+}
 
-  #site-navigation {
-    // link placement
-    position: relative;
-    left: 750px;
-    right: 0;
-    top: 0;
-  }
+.nav-container{
+  display: flex;
 }
 
 .site-header a {
-  justify-content: flex-end;
+ margin-right: 16px;
   color: #248a83;
+ 
 }
 
-.site-branding {
+.tent-logo {
   color: #248a83;
   height: 50px;
   width: 45px;
+  margin-left:140px;
 }
 
 .fa.fa-search {

@@ -25,29 +25,31 @@ get_header(); ?>
             <!-- grid container -->
 
             <?php /* Start the Loop */ ?>
-            <?php
-				$args = array(  
-				'post_type' => 'product',
-				'posts_per_page' => 16    
-				);
-				$loop = new WP_Query( $args ); 
-			?>
-            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-            <article>
-                <?php 
-                    if ( has_post_thumbnail() ) {
-                        the_post_thumbnail();
-                    } 
+            
+                <?php
+                    $args = array(  
+                    'post_type' => 'product',
+                    'posts_per_page' => 16    
+                    );
+                    $loop = new WP_Query( $args ); 
                 ?>
-                
-
-                <p>
-                    <span><?php the_title(); ?></span> 
-                   <span> <?php the_field('price'); ?></span>
-                </p>
-            </article>
-
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+            
+                <article>
+                <a href="">
+                    <?php 
+                        if ( has_post_thumbnail() ) {
+                            the_post_thumbnail();
+                        } 
+                    ?>
+                    
+                    <p>
+                        <span><?php the_title(); ?></span> 
+                    <span> <?php the_field('price'); ?></span>
+                    </p>
+                </a>
+                </article>
+           
             <?php endwhile; ?> 
             
             </div> <!-- grid container end -->
