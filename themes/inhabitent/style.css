@@ -582,9 +582,9 @@ textarea {
 a {
   color: #248A83; }
   a:visited {
-    color: purple; }
+    color: white; }
   a:hover, a:focus, a:active {
-    color: #248A83; }
+    color: white; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -940,6 +940,7 @@ object {
   position: relative; }
 
 .site-main {
+  background-image: url(../../inhabitent/images/home-hero.jpg);
   margin-top: 30px; }
 
 #phone {
@@ -985,7 +986,8 @@ object {
 .content-area {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 3rem; }
 
 .taxonomy-description p {
   display: none; }
@@ -1018,9 +1020,13 @@ object {
 
 .links a {
   text-decoration: none;
-  font-size: 20px; }
+  font-size: 20px;
+  color: #248a83; }
 
-.do-container {
+.nav-previous {
+  display: none; }
+
+.term-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1028,7 +1034,7 @@ object {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.paragraph {
+.caption-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,7 +1,7 @@
 .title-block {
   background-color: #248a83;
   font-size: 28px;
-  padding-left:24px ;
+  padding-left: 24px;
   color: white;
   width: 400px;
   display: flex;
@@ -10,19 +10,18 @@
   top: 0px;
 }
 
-.content-area{
+.content-area {
+ 
   display: flex;
-  main{
-    flex:1 0 70%;
+  main {
+    flex: 1 0 70%;
   }
-  .widget-area{
-    flex:1 0 30%
-    
+  .widget-area {
+    flex: 1 0 30%;
   }
 }
-.entry-content{
+.entry-content {
   padding-right: 80px;
-
 }
 .entry-meta {
   color: white;
@@ -50,9 +49,10 @@
 .entry-header {
   position: relative;
 }
-.site-main{
+.site-main {
+  background-image: url(../../inhabitent/images/home-hero.jpg);
   margin-top: 30px;
 }
-#phone{
+#phone {
   width: 250px;
 }

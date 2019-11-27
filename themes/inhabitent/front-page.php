@@ -7,10 +7,10 @@
 
 get_header(); ?>
 
-<div class="bkgd-image-container">
+<!-- <div class="bkgd-image-container">
     <div class="home-image">
         <img src="wp-content/themes/inhabitent/images/home-hero.jpg" alt="home-image">
-    </div>
+    </div> -->
 
 
     <div class="round-tent-logo">
@@ -32,8 +32,8 @@ get_header(); ?>
             <img src="wp-content/themes/inhabitent/images/product-type-icons/do.svg" alt="Do">
         </section>
 
-        <p class="blurb">Get back to nature with all the tools and toys you need to enjoy the great outdoors.
-        </p>
+        <!-- <p class="blurb">Get back to nature with all the tools and toys you need to enjoy the great outdoors.
+        </p> -->
         <p class="do-buttons">
             <a class="do-button1" href="">Do Stuff</a>
         </p>
@@ -41,12 +41,12 @@ get_header(); ?>
 
     <div class="product-block">
         <section class="i-image">
-            <img class="i-image" src="wp-content/themes/inhabitent/images/product-type-icons/eat.svg" alt="Eat">
+            <img class="i-image" src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/eat.svg" alt="Eat">
         </section>
 
-        <p class="blurb">Nothing beats food cooked over a fire. We have all you need for good camping eats.
+        <!-- <p class="blurb">Nothing beats food cooked over a fire. We have all you need for good camping eats.
 
-        </p>
+        </p> -->
 
         <p class="do-buttons">
             <a class="do-button2" href="">Eat Stuff</a>
@@ -55,7 +55,7 @@ get_header(); ?>
 
     <div class="product-block">
         <section class="i-image">
-            <img class="i-image" src="wp-content/themes/inhabitent/images/product-type-icons/sleep.svg" alt="Sleep">
+            <img class="i-image"<?php echo get_template_directory_uri(); ?> src="wp-content/themes/inhabitent/images/product-type-icons/sleep.svg" alt="Sleep">
         </section>
         <p class="blurb">Get a good night's rest in the wild in a home away from home that travels well.
         </p>
@@ -66,10 +66,10 @@ get_header(); ?>
 
     <div class="product-block">
         <section class="i-image">
-            <img class="i-image" src="wp-content/themes/inhabitent/images/product-type-icons/wear.svg" alt="Wear">
+            <img class="i-image"<?php echo get_template_directory_uri(); ?> src="wp-content/themes/inhabitent/images/product-type-icons/wear.svg" alt="Wear">
         </section>
-        <p class="blurb">From flannel shirts to toques, look the part while roughing it in the great outdoors.
-        </p>
+        <!-- <p class="blurb">From flannel shirts to toques, look the part while roughing it in the great outdoors.
+        </p> -->
 
         <p class="do-buttons">
             <a class="do-button4" href="" class="">Wear Stuff</a>

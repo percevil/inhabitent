@@ -39,3 +39,11 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+
+add_filter( 'get_the_archive_title', function ( $title ) {
+    if( is_tax('product_type') ) {
+     $title = single_cat_title( '', false );
+    }
+    return $title;
+});

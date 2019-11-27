@@ -12,13 +12,11 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
 
         <div class="caption-container">
-            <div class="do-container" >
-                <h1>DO</h1>
-            </div>
-            <div class="paragraph">
-                <p>
-                Get back to nature with all the tools and toys you need to enjoy the great outdoors.
-                </p>
+            <div class="taxonomy-term-container" >
+                <?php
+                the_archive_title( '<h1 class="term-title">', '</h1>');
+                the_archive_description( '<div class="product-taxonomy-description">', '</div>' );  
+                ?>
             </div>
         </div>
             
