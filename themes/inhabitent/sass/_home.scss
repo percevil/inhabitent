@@ -1,17 +1,18 @@
-.title-block {
-  background-color: #248a83;
-  font-size: 28px;
-  padding-left: 24px;
-  color: white;
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 0px;
+.blog {
+  .title-block {
+    background-color: #248a83;
+    font-size: 28px;
+    padding-left: 24px;
+    color: white;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+  }
 }
 
 .content-area {
- 
   display: flex;
   main {
     flex: 1 0 70%;
