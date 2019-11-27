@@ -5,7 +5,10 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+get_header(); 
+$query=get_terms('taxonomy=product_type');
+// var_dump($query);
+?>
 
 
 <div id="primary" class="content-area">
@@ -16,10 +19,15 @@ get_header(); ?>
         </div>
         <div class="desw-links">
             <ul class="links">
-                <li>DO</li>
-                <li>EAT</li>
-                <li>SLEEP</li>
-                <li>WEAR</li>
+                <?php
+                $tmp='';
+                foreach($query as $x){
+                    $tmp.='<li><a href="'. get_term_link($x) .'">'.$x->slug.'</a></li>';
+                    
+                }
+                echo $tmp;
+                ?>
+                
             </ul>
         </div>
 
