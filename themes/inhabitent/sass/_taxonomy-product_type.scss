@@ -1,0 +1,16 @@
+.do-container {
+  display: flex;
+  justify-content: center;
+}
+.paragraph {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px dotted #a1a1a1;
+  margin-bottom: 3rem;
+  margin-top: -1rem;
+}
+
+.grid-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0fr 0fr 0fr 0fr;
+}

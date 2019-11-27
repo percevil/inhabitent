@@ -154,7 +154,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  margin-top: 76px; }
+  margin-top: 20px; }
 
 html {
   font-family: sans-serif;
@@ -580,11 +580,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #248a83; }
+  color: #248A83; }
   a:visited {
-    color: white; }
+    color: purple; }
   a:hover, a:focus, a:active {
-    color: #fff9c0; }
+    color: #248A83; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -647,7 +647,6 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
@@ -979,7 +978,7 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border: 1px solid #808080;
-  padding: 1rem .75rem;
+  padding: 1rem 0.75rem;
   color: black;
   font-size: 12px; }
 
@@ -1011,10 +1010,38 @@ object {
           justify-content: center;
   text-decoration: none;
   padding-bottom: 40px;
-  padding-left: 84px; }
+  padding-left: 84px;
+  border-bottom: 1px dotted #a1a1a1; }
 
 .links li {
   margin-right: 35px; }
+
+.links a {
+  text-decoration: none;
+  font-size: 20px; }
+
+.do-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px dotted #a1a1a1;
+  margin-bottom: 3rem;
+  margin-top: -1rem; }
+
+.grid-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0fr 0fr 0fr 0fr; }
 
 .site-content {
   display: -webkit-box;

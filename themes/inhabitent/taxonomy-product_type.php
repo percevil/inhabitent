@@ -10,18 +10,18 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-        
-        <div class="shop-stuff">
-            <h1>SHOP STUFF</h1>
+
+        <div class="caption-container">
+            <div class="do-container" >
+                <h1>DO</h1>
+            </div>
+            <div class="paragraph">
+                <p>
+                Get back to nature with all the tools and toys you need to enjoy the great outdoors.
+                </p>
+            </div>
         </div>
-        <div class="desw-links">
-            <ul class="links">
-                <li>DO</li>
-                <li>EAT</li>
-                <li>SLEEP</li>
-                <li>WEAR</li>
-            </ul>
-        </div>
+            
 
         <?php if ( have_posts() ) : ?>
 
@@ -35,19 +35,17 @@ get_header(); ?>
         <div class="grid-container">
             <!-- grid container -->
 
-            <?php /* Start the Loop */ ?>
+                <?php /* Start the Loop */ ?>
             
                 <?php
-                    $args = array(  
-                    'post_type' => 'product',
-                    'posts_per_page' => 4    
-                    );
-                    $loop = new WP_Query( $args ); 
+                if ( have_posts() ) {
+                    while ( have_posts() ) {
+                        the_post(); 
+                       
                 ?>
-                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
             
                 <article> <!-- add the same class as in archive product -->
-                <a href="">
+                 <a href="">
                     <?php 
                         if ( has_post_thumbnail() ) {
                             the_post_thumbnail();
@@ -61,7 +59,9 @@ get_header(); ?>
                 </a>
                 </article>
            
-            <?php endwhile; ?> 
+                <?php  
+                    } // end while
+                } // end if ?> 
             
             </div> <!-- grid container end -->
 

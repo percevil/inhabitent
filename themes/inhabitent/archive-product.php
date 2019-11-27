@@ -22,8 +22,8 @@ $query=get_terms('taxonomy=product_type');
                 <?php
                 $tmp='';
                 foreach($query as $x){
-                    $tmp.='<li><a href="'. get_term_link($x) .'">'.$x->slug.'</a></li>';
-                    
+
+                $tmp.='<li><a href="'. get_term_link($x) .'">'.$x->slug.'</a></li>';   
                 }
                 echo $tmp;
                 ?>
@@ -40,15 +40,15 @@ $query=get_terms('taxonomy=product_type');
 				?>
         </header><!-- .page-header -->
 
-        <div class="grid-container">
+        
             <!-- grid container -->
-
+        <div class="grid-container">
             <?php /* Start the Loop */ ?>
             
                 <?php
                     $args = array(  
                     'post_type' => 'product',
-                    'posts_per_page' => 16    
+                    'posts_per_page' => 16   
                     );
                     $loop = new WP_Query( $args ); 
                 ?>
@@ -70,12 +70,8 @@ $query=get_terms('taxonomy=product_type');
                 </article>
            
             <?php endwhile; ?> 
-            
+        </div>    
             </div> <!-- grid container end -->
-
-            
-
-
 
         <?php the_posts_navigation(); ?> <?php else : ?> <?php /* CHANGE 'post' IN THIS LINE TO 'product' to POPULATE THE PRODUCTS ON THE HOME PAGE */
    			// $args = array( 'post_type' => 'product','numberposts'=>"2", 'order' => 'ASC' );
@@ -84,5 +80,5 @@ $query=get_terms('taxonomy=product_type');
     </main> <!-- #main -->
 </div><!-- #primary -->
 
-
 <?php get_footer(); ?>
+
