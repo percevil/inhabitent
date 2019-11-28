@@ -17,9 +17,7 @@
   fieldset {
     border: 0;
   }
-  .search-field {
-    // display: none;
-  }
+
   button {
     background: transparent;
     border: 0;
@@ -29,11 +27,9 @@
 #site-navigation {
   display: flex;
   align-items: center;
-  margin-left: 600px;
-}
-
-.nav-container {
-  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 32px;
 }
 
 .site-header a {
@@ -50,4 +46,8 @@
 
 .fa.fa-search {
   color: #248a83;
+  display: flex;
+  padding-right: 80px;
+}
+.search-submit {
 }
