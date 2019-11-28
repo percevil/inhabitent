@@ -6,7 +6,7 @@
 
 (function($) {
   $(document).ready(function($) {
-    $('.search-submit').click(function(event) {
+    $('.icon-search').click(function(event) {
       event.preventDefault();
       $('.search-field')
         .css('display', 'inline-block')

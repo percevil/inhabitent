@@ -1,10 +1,10 @@
 .site-header {
   height: 50px;
   display: flex;
-  // z-index: 99;
   background: rgba(white, 0.5);
   border-bottom: 1px solid #e1e1e1;
-
+  position: static;
+  z-index: 1;
   &.sticky {
     position: absolute;
     left: 0;
@@ -42,6 +42,8 @@
   height: 50px;
   width: 45px;
   margin-left: 140px;
+  position: relative;
+  z-index: 75;
 }
 
 .fa.fa-search {

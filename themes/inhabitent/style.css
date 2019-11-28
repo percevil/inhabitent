@@ -49,7 +49,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   display: -ms-flexbox;
   display: flex;
   background: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #e1e1e1;
+  position: static;
+  z-index: 1; }
   .site-header.sticky {
     position: absolute;
     left: 0;
@@ -87,7 +89,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   color: #248a83;
   height: 50px;
   width: 45px;
-  margin-left: 140px; }
+  margin-left: 140px;
+  position: relative;
+  z-index: 75; }
 
 .fa.fa-search {
   color: #248a83;
@@ -675,7 +679,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   background: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #e1e1e1;
+  position: static;
+  z-index: 1; }
   .site-header.sticky {
     position: absolute;
     left: 0;
@@ -713,7 +719,9 @@ a {
   color: #248a83;
   height: 50px;
   width: 45px;
-  margin-left: 140px; }
+  margin-left: 140px;
+  position: relative;
+  z-index: 75; }
 
 .fa.fa-search {
   color: #248a83;
@@ -1415,7 +1423,8 @@ object {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  color: red; }
 
 .search-field {
   width: 0px;
