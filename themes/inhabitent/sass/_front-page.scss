@@ -127,6 +127,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 'canoe canoe beach beach' 'canoe canoe mountain sky';
+  position: relative;
+  z-index: 1;
 
   img {
     object-fit: cover;
@@ -138,18 +140,17 @@
 .canoe {
   grid-area: canoe;
   margin-right: 20px;
-  margin-bottom: 120px;
+  margin-bottom: 128px;
 }
 
 .beach {
   grid-area: beach;
-  height: 212px;
+  height: 251px;
 }
 
 .mountain {
   grid-area: mountain;
-  margin-bottom: 120px;
-  height: 197px;
+  height: 149px;
 }
 
 .sky {
@@ -165,10 +166,121 @@
   height: 40px;
   width: 175px;
   background-color: #248a83;
-  position: relative;
-  bottom: 100px;
+  position: absolute;
+  bottom: 65px;
 
   a {
     text-decoration: none;
   }
+}
+.canoe-link {
+  display: flex;
+  font-size: 42px;
+  text-decoration: none;
+  position: absolute;
+  top: -30px;
+  left: 25px;
+  p {
+    color: white;
+  }
+}
+
+.white-button1 {
+  position: absolute;
+  top: 145px;
+  left: 27px;
+  text-decoration: none;
+  height: 35px;
+  width: 100px;
+  border: 1px solid white;
+  color: white;
+
+  //centering button
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beach-link {
+  display: flex;
+  font-size: 38px;
+  text-decoration: none;
+  position: absolute;
+  top: -26px;
+  right: 34px;
+  p {
+    color: white;
+  }
+}
+
+.white-button2 {
+  position: absolute;
+  top: 134px;
+  right: 366px;
+  text-decoration: none;
+  height: 35px;
+  width: 100px;
+  border: 1px solid white;
+  color: white;
+
+  //centering button
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mountain-link {
+  display: flex;
+  font-size: 21px;
+  text-decoration: none;
+  position: absolute;
+  top: 254px;
+  right: 339px;
+  p {
+    color: white;
+  }
+}
+
+.white-button3 {
+  position: absolute;
+  top: 377px;
+  right: 371px;
+  text-decoration: none;
+  height: 35px;
+  width: 100px;
+  border: 1px solid white;
+  color: white;
+
+  //centering button
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sky-link {
+  display: flex;
+  font-size: 21px;
+  text-decoration: none;
+  position: absolute;
+  top: 254px;
+  right: 48px;
+  p {
+    color: white;
+  }
+}
+
+.white-button4 {
+  position: absolute;
+  top: 344px;
+  right: 104px;
+  text-decoration: none;
+  height: 35px;
+  width: 100px;
+  border: 1px solid white;
+  color: white;
+
+  //centering button
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -105,6 +105,7 @@ get_header(); ?>
 </section>
 
 <div class="grd-container">
+
     <div class="canoe"><img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg' ?>" alt=""></div>
 
     <div class="beach"><img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/beach-bonfire.jpg' ?>" alt=""></div>
@@ -112,6 +113,43 @@ get_header(); ?>
     <div class="mountain"><img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/mountain-hikers.jpg' ?>" alt=""></div>
 
     <div class="sky"><img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/night-sky.jpg' ?>" alt=""></div>
+
+
+
+    <a class="canoe-link " href=" ">
+        <p>Getting Back to<br>Nature in a Canoe</p>
+    </a>
+    <div class="button-container">
+        <a class="white-button1" href="white-button1">Read More</a>
+    </div>
+
+
+    <a class="beach-link " href=" ">
+        <p>A Night with Friends at <br>the Beach</p>
+    </a>
+    <div class="button-container">
+        <a class="white-button2" href="white-button2">Read More</a>
+    </div>
+
+    <a class="mountain-link " href=" ">
+        <p>Taking in the<br> View at Big<br> Mountain</p>
+    </a>
+    <div class="button-container">
+        <a class="white-button3" href="white-button3">Read More</a>
+    </div>
+
+
+    <a class="sky-link " href=" ">
+        <p>Star-Gazing at<br> the Night Sky</p>
+    </a>
+    <div class="button-container">
+        <a class="white-button4" href="white-button4">Read More</a>
+    </div>
+
+
+
+
+
 
     <div class="more-button">
         <a href="">MORE ADVENTURES</a>

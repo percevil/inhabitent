@@ -15,10 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
-
-
-
     <?php wp_head(); ?>
 </head>
 
@@ -29,6 +25,7 @@
         <header id="masthead" class="site-header" role="banner">
 
             <div class="nav-container">
+
 
                 <a href="http://localhost:8881/inhabitent/front-page/">
                     <img class="tent-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" />
