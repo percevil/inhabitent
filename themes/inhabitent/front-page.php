@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file.
  *
@@ -6,23 +7,15 @@
  */
 
 get_header(); ?>
-
-<!-- <div class="bkgd-image-container">
-    <div class="home-image">
-        <img src="wp-content/themes/inhabitent/images/home-hero.jpg" alt="home-image">
-    </div> -->
 <div class="background-container">
- <img class="hero-image" src="<?php echo get_template_directory_uri().'/images/home-hero.jpg'?>" alt="hero-image">
- </div>
-
-
-    <div class="round-tent-logo">
-        <img class="logo" src="wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg"
-            alt="Inhabitent full logo">
-    </div>
+    <img class="hero-image" src="<?php echo get_template_directory_uri() . '/images/home-hero.jpg' ?>" alt="hero-image">
 </div>
 
 
+<div class="round-tent-logo">
+    <img class="logo" src="wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg" alt="Inhabitent full logo">
+</div>
+</div>
 
 <section class="product-info container">
     <div class="shop-stuff">
@@ -32,23 +25,23 @@ get_header(); ?>
     </div>
 
     <?php
-    $terms = get_terms( array(
+    $terms = get_terms(array(
         'taxonomy' => 'product_type',
         'hide_empty' => 0,
-    ) );
-    if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
-    ?>
-    <div class="product-type-blocks product-container">
-        <?php foreach ( $terms as $term ) : ?>
-            <div class="product-type-block-wrapper product-block">
-                <div class="i-image">
-                  <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
+    ));
+    if (!empty($terms) && !is_wp_error($terms)) :
+        ?>
+        <div class="product-type-blocks product-container">
+            <?php foreach ($terms as $term) : ?>
+                <div class="product-type-block-wrapper product-block">
+                    <div class="i-image">
+                        <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
+                    </div>
+                    <p><?php echo $term->description; ?></p>
+                    <p class="do-buttons"><a href="<?php echo get_term_link($term); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
                 </div>
-                <p><?php echo $term->description; ?></p>
-                <p class="do-buttons"><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
-            </div>
-        <?php endforeach; ?>
-    </div>
+            <?php endforeach; ?>
+        </div>
     <?php endif; ?>
 </section>
 
@@ -56,11 +49,12 @@ get_header(); ?>
 <!--**** START OF FIRST LOOP FOR JOURNAL PICS AND ENTRIES ****-->
 
 
-<?php while ( have_posts() ) : the_post(); ?>
+<?php while (have_posts()) : the_post(); ?>
 
-<?php get_template_part( 'template-parts/content', ); ?>
+    <?php get_template_part('template-parts/content',); ?>
 
-<?php endwhile; // End of the loop. ?>
+<?php endwhile; // End of the loop. 
+?>
 
 </main><!-- #main -->
 
@@ -70,32 +64,35 @@ get_header(); ?>
     <section class="h2-container">
         <h2>Inhabitent Journal</h2>
     </section>
-  
-        <!-- second loop -->
-        <div class="journal-container">
 
-                <?php
-                        $args = array( 'post_type' => 'post','numberposts'=>"3", 'order' => 'ASC' );
-                        $product_posts = get_posts( $args ); // returns an array of posts?>
+    <!-- second loop -->
+    <div class="journal-container">
 
-                <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-                <?php /* Content from your array of post results goes here */ ?>
-                <article class="journal-entry">
-                    <div class="post-picture-container">
-                        <?php the_post_thumbnail(); ?>
+        <?php
+        $args = array('post_type' => 'post', 'numberposts' => "3", 'order' => 'ASC');
+        $product_posts = get_posts($args); // returns an array of posts
+        ?>
+
+        <?php foreach ($product_posts as $post) : setup_postdata($post); ?>
+            <?php /* Content from your array of post results goes here */ ?>
+            <article class="journal-entry">
+                <div class="post-picture-container">
+                    <?php the_post_thumbnail(); ?>
+                </div>
+
+                <div class="post-wrapper">
+                    <div class="journal-meta">
+                        <!-- CREATES BUTTON FOR ARTICLE -->
+                        <?php the_title(); ?>
+                        <a href="<?php echo get_the_permalink(); ?>">Read entry</a>
                     </div>
+                </div>
+            </article>
 
-                    <div class="post-wrapper">
-                        <div class="journal-meta"> <!-- CREATES BUTTON FOR ARTICLE -->
-                            <?php the_title(); ?>
-                            <a href="<?php echo get_the_permalink(); ?>">Read entry</a>  
-                        </div>
-                    </div>
-                </article>
+        <?php endforeach;
+        wp_reset_postdata(); ?>
 
-            <?php endforeach; wp_reset_postdata(); ?>
-         
-        </div>
+    </div>
 </section>
 
 
@@ -112,5 +109,5 @@ get_header(); ?>
 
 
 
-   
+
 <?php get_footer(); ?>

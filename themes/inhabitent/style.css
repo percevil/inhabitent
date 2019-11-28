@@ -1182,20 +1182,25 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  width: 106%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .journal-container .journal-entry {
+    width: 26.333%; }
 
 .journal-meta {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 300px;
-  width: 10vw; }
+  height: 100px;
+  border: 1px dotted #a1a1a1;
+  margin-left: 10px;
+  margin-right: 10px; }
   .journal-meta a {
     color: red; }
 
-.media-container h2 {
-  margin-top: -50px; }
+.media-container {
+  margin: 0 auto; }
+  .media-container h2 {
+    margin-top: -50px; }
 
 .post-picture-container {
   display: -webkit-box;
