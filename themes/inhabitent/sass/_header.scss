@@ -12,27 +12,40 @@
     top: 0;
   }
 }
-#site-navigation{
+.search-form {
+  border: 0;
+  fieldset {
+    border: 0;
+  }
+  .search-field {
+    // display: none;
+  }
+  button {
+    background: transparent;
+    border: 0;
+    box-shadow: unset;
+  }
+}
+#site-navigation {
   display: flex;
   align-items: center;
   margin-left: 600px;
 }
 
-.nav-container{
+.nav-container {
   display: flex;
 }
 
 .site-header a {
- margin-right: 16px;
+  margin-right: 16px;
   color: #248a83;
- 
 }
 
 .tent-logo {
   color: #248a83;
   height: 50px;
   width: 45px;
-  margin-left:140px;
+  margin-left: 140px;
 }
 
 .fa.fa-search {

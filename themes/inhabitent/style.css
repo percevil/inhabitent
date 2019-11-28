@@ -56,6 +56,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     right: 0;
     top: 0; }
 
+.search-form {
+  border: 0; }
+  .search-form fieldset {
+    border: 0; }
+  .search-form button {
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: unset;
+            box-shadow: unset; }
+
 #site-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,6 +679,16 @@ a {
     right: 0;
     top: 0; }
 
+.search-form {
+  border: 0; }
+  .search-form fieldset {
+    border: 0; }
+  .search-form button {
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: unset;
+            box-shadow: unset; }
+
 #site-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -950,15 +970,6 @@ object {
   padding-left: 20px;
   border-left: 1px solid #e1e1e1; }
 
-.entry-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1091,15 +1102,15 @@ object {
   -webkit-transform: translate(274%, 101%);
           transform: translate(274%, 101%); }
 
-h2 {
-  font-size: 37px;
+.h2-container {
+  font-size: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 45px 0px 60px 0px; }
+  margin: 45px 0px 45px 0px; }
 
 .product-block {
   width: 215px;
@@ -1170,6 +1181,27 @@ h2 {
 .journal-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .journal-container .journal-entry {
-    width: 33.333%; }
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.journal-meta {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 10vw; }
+  .journal-meta a {
+    color: red; }
+
+.media-container h2 {
+  margin-top: -50px; }
+
+.post-picture-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 17vw;
+  max-width: 33vw;
+  margin-left: 10px;
+  margin-right: 10px; }

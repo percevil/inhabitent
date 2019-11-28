@@ -26,7 +26,9 @@ get_header(); ?>
 
 <section class="product-info container">
     <div class="shop-stuff">
-        <h2>SHOP STUFF</h2>
+        <section class="h2-container">
+            <h2>SHOP STUFF</h2>
+        </section>
     </div>
 
     <?php
@@ -64,7 +66,10 @@ get_header(); ?>
 
 
 <section class="media-container">
-<h2>Inhabitent Journal</h2>
+
+    <section class="h2-container">
+        <h2>Inhabitent Journal</h2>
+    </section>
   
         <!-- second loop -->
         <div class="journal-container">
@@ -79,14 +84,17 @@ get_header(); ?>
                     <div class="post-picture-container">
                         <?php the_post_thumbnail(); ?>
                     </div>
-    ------>                <div class="journal-meta"> <!-- CREATES BUTTON FOR ARTICLE -->
-                        <?php the_title(); ?>
-                        <a href="<?php echo get_the_permalink(); ?>">Read entry</a>   
+
+                    <div class="post-wrapper">
+                        <div class="journal-meta"> <!-- CREATES BUTTON FOR ARTICLE -->
+                            <?php the_title(); ?>
+                            <a href="<?php echo get_the_permalink(); ?>">Read entry</a>  
+                        </div>
                     </div>
                 </article>
 
             <?php endforeach; wp_reset_postdata(); ?>
-            <!-- **** END OF FIRST LOOP FOR JOURNAL PICS AND ENTRIES ****-->
+         
         </div>
 </section>
 
@@ -94,7 +102,9 @@ get_header(); ?>
 
 
 <section class="adventure-container">
-    <h2>Latest Adventures</h2>
+    <section class="h2-container">
+        <h2>Latest Adventures</h2>
+    </section>
 </section>
 
 
