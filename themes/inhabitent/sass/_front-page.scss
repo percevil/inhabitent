@@ -144,7 +144,6 @@
 .beach {
   grid-area: beach;
   height: 212px;
- 
 }
 
 .mountain {
@@ -152,14 +151,24 @@
   margin-bottom: 120px;
   height: 197px;
 }
-  
+
 .sky {
   grid-area: sky;
   margin-left: 20px;
   margin-bottom: 120px;
- 
 }
-.white-space {
-  height: 100px;
-  width: 1000px;
+
+.more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 175px;
+  background-color: #248a83;
+  position: relative;
+  bottom: 100px;
+
+  a {
+    text-decoration: none;
+  }
 }

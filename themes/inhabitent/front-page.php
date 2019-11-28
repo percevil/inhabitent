@@ -112,11 +112,15 @@ get_header(); ?>
     <div class="mountain"><img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/mountain-hikers.jpg' ?>" alt=""></div>
 
     <div class="sky"><img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/night-sky.jpg' ?>" alt=""></div>
+
+    <div class="more-button">
+        <a href="">MORE ADVENTURES</a>
+    </div>
+
 </div>
 
-<div class="white=space">
 
-</div>
+
 
 
 
