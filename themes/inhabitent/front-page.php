@@ -104,6 +104,20 @@ get_header(); ?>
     </section>
 </section>
 
+<div class="grd-container">
+    <div class="canoe"><img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg' ?>" alt=""></div>
+
+    <div class="beach"><img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/beach-bonfire.jpg' ?>" alt=""></div>
+
+    <div class="mountain"><img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/mountain-hikers.jpg' ?>" alt=""></div>
+
+    <div class="sky"><img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/night-sky.jpg' ?>" alt=""></div>
+</div>
+
+<div class="white=space">
+
+</div>
+
 
 
 
